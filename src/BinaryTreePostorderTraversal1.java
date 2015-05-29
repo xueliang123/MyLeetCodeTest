@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * Created by xueliang on 15-1-22.
  */
-public class BinaryTreePostorderTraversal {
+public class BinaryTreePostorderTraversal1 {
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<Integer>();
         if (root != null) {

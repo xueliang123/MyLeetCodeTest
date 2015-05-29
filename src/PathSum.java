@@ -7,7 +7,7 @@ import java.util.Set;
 public class PathSum {
     public boolean hasPathSum(TreeNode root, int sum) {
         Set<Integer> result = sumSubTree(root);
-        return  result.contains(sum);
+        return result.contains(sum);
     }
 
     public Set<Integer> sumSubTree (TreeNode root) {

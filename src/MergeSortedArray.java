@@ -22,5 +22,10 @@ public class MergeSortedArray {
                 count++;
             }
         }
+        if (index >= m) {
+            while (j < n) {
+                A[i++] = B[j++];
+            }
+        }
     }
 }
