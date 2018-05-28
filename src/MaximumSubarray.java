@@ -3,21 +3,11 @@
  */
 public class MaximumSubarray {
     public int maxSubArray(int[] A) {
-        int max = 0;
-        int curSum = 0;
-        for (int i = 0; i < A.length; i++) {
-            curSum += A[i];
-            if (curSum <= 0) {
-                curSum = 0;
-                continue;
-            }
-            max = max > curSum ? max : curSum;
-        }
-        if (max == 0) {
-            max = A[0];
-            for (int i = 1; i < A.length; i++) {
-                max = max > A[i] ? max : A[i];
-            }
+        int max = A[0];
+        int curSum = A[0];
+        for (int i = 1; i < A.length; i++) {
+            curSum = A[i] + (curSum > 0 ? curSum : 0);
+            max = Math.max(max, curSum);
         }
         return max;
     }

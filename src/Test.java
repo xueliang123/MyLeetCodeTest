@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -6,16 +7,11 @@ import java.util.List;
  */
 public class Test {
         public static void main(String[] args) {
-                List<Interval> list = new LinkedList<>();
-                list.add(new Interval(1, 2));
-                list.add(new Interval(3, 5));
-                list.add(new Interval(6, 7));
-                list.add(new Interval(8, 10));
-                list.add(new Interval(12, 16));
-                InsertInterval i = new InsertInterval();
-                List<Interval> res = i.insert(list, new Interval(4, 8));
-                for (Interval x : res) {
-                        System.out.println(x.start + "  " + x.end);
-                }
+            LRUCache c = new LRUCache(1);
+            c.put(2, 1);
+            System.out.println(c.get(2));
+            c.put(3, 2);
+            System.out.println(c.get(2));
+            System.out.println(c.get(3));
         }
 }
