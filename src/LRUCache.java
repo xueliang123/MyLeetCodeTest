@@ -35,8 +35,7 @@ public class LRUCache {
                 addNode(node);
                 map.put(key, node);
             } else {
-                int expireKey = delNode();
-                map.remove(expireKey);
+                map.remove(delNode());
                 addNode(node);
                 map.put(key, node);
             }
