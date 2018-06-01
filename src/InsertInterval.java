@@ -1,3 +1,5 @@
+import stuctures.Interval;
+
 import java.util.LinkedList;
 import java.util.List;
 

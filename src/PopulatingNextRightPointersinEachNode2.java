@@ -1,3 +1,5 @@
+import stuctures.TreeLinkNode;
+
 /**
  * Created by xueliang on 15-1-22.
  */

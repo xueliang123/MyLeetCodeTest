@@ -1,3 +1,5 @@
+import stuctures.TreeNode;
+
 /**
  * Created by xueliang on 14-12-25.
  */

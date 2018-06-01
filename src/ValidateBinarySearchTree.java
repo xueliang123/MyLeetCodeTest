@@ -1,3 +1,5 @@
+import stuctures.TreeNode;
+
 import java.util.Stack;
 
 public class ValidateBinarySearchTree {

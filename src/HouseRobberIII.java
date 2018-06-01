@@ -1,3 +1,5 @@
+import stuctures.TreeNode;
+
 public class HouseRobberIII {
     public int rob(TreeNode root) {
         int[] tmp = testRob(root);

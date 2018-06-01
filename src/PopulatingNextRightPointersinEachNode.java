@@ -1,3 +1,5 @@
+import stuctures.TreeLinkNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 

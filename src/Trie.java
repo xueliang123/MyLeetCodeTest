@@ -68,13 +68,13 @@ class Trie {
         boolean f;
         List<TrieNode> list;
 
-        public TrieNode(char c) {
+        private TrieNode(char c) {
             this.c = c;
             f = false;
             list = new LinkedList<>();
         }
 
-        public int indexOf(char c) {
+        private int indexOf(char c) {
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i).c == c) {
                     return i;
