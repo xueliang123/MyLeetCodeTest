@@ -31,14 +31,11 @@ public class LRUCache {
             touchNode(node);
         } else {
             Node node = new Node(key, value);
-            if (map.size() < capacity) {
-                addNode(node);
-                map.put(key, node);
-            } else {
+            if (map.size() >= capacity) {
                 map.remove(delNode());
-                addNode(node);
-                map.put(key, node);
             }
+            addNode(node);
+            map.put(key, node);
         }
     }
 
